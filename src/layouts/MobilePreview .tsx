@@ -39,7 +39,7 @@ const MobilePreview: React.FC = ( ) => {
                         <div className="overflow-x-hidden scroll-smooth overflow-y-auto w-full">
                             <Banner isEdit={true} phoneScreen={true} />
                             <Invitation isEdit={true} phoneScreen={true} />  
-                            <Biography isEdit={true} />       
+                            <Biography />       
                             <Story isEdit={true}/>
                             <Journey />
                             <PhotoAlbum  />
