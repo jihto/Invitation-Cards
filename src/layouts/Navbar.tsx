@@ -1,15 +1,13 @@
 import React, { useRef, useState } from "react";
 import { Outlet } from "react-router-dom";
 import MobilePreview from "./MobilePreview ";
-import DestopPreview from "./DestopPreview"; 
-import useWidget from "../components/hooks/useWidget";
+import DestopPreview from "./DestopPreview";  
 
 type TypeDisplay = "mobile" | "desktop" | "edit";
 
 const Navbar: React.FC = () => { 
     const [display, setDisplay] = useState<TypeDisplay>("edit"); 
-    const phoneRef = useRef<HTMLDivElement>(null);
-    const {onOpen} = useWidget();
+    const phoneRef = useRef<HTMLDivElement>(null); 
 
     const enterFullScreen = (type: TypeDisplay) => {
         if (phoneRef.current) {

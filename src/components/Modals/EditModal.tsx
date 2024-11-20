@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
         import useEditModal from '../hooks/useEditModal';
 
 const EditModal: React.FC = () => {
-    const editModal = useEditModal();
-    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const editModal = useEditModal(); 
 
     // useEffect(() => {
     //     const handleClick = (e: MouseEvent) => {
@@ -24,9 +23,7 @@ const EditModal: React.FC = () => {
     return ( 
         <div 
             className="fixed z-50"
-            style={{
-                left: `${position.x}px`,
-                top: `${position.y}px`,
+            style={{ 
                 transform: 'translate(-50%, -120%)'
             }}
         >

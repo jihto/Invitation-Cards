@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import banner from "../assets/banner.jpg"; 
 import RichTextEditor from "./common/RichTextEditor";
 
@@ -14,11 +14,11 @@ interface BannerProps{
 }
 
 const Banner: React.FC<BannerProps> = ({ isEdit = false, phoneScreen = false}) => {  
-    const [text, setText] = useState<TextProps>({
+    const text: TextProps = {
         text1: "Chúng tôi cưới",
         text2: "Chú rể & Cô dâu",
         text3: "06 . 09 . 2022",
-    });
+    };
     return (
         <section
             className="relative snap-start min-h-screen h-screen bg-cover bg-center w-full"

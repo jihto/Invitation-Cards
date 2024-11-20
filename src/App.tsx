@@ -1,12 +1,9 @@
 import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
-import Navbar from "./layouts/Navbar"
-import Modal from "./components/Modals/Modal"
+import Navbar from "./layouts/Navbar" 
 
-function App() {
-
-  return (
-    
+function App() { 
+  return ( 
     <Routes location={location}>
       <Route path="/" element={<Navbar />}>
           <Route path="home" index element={<Home />} /> 

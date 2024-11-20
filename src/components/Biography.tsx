@@ -10,7 +10,7 @@ interface BiographyPerson {
     imageUrl: string;
 }
 
-const Biography: React.FC<{isEdit?: boolean}> = ({isEdit = false}) => {
+const Biography: React.FC = () => {
     const people: BiographyPerson[] = [
         {
             role: "Chú rể",
