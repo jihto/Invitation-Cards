@@ -6,7 +6,7 @@ function App() {
   return ( 
     <Routes location={location}>
       <Route path="/" element={<Navbar />}>
-          <Route path="home" index element={<Home />} /> 
+          <Route path="" index element={<Home />} /> 
       </Route>
     </Routes>
   )
