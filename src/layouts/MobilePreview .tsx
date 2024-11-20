@@ -12,7 +12,7 @@ const MobilePreview: React.FC = ( ) => {
     return ( 
         <div className="flex justify-center items-center h-full">
             
-        <div className="relative w-[390px] h-[844px] bg-transparent rounded-[60px] border-[14px] border-black overflow-hidden shadow-xl">
+        <div className="relative w-[390px] h-[700px] mt-10 bg-transparent rounded-[60px] border-[14px] border-black overflow-hidden shadow-xl">
             {/* Status Bar */}
             <div className="absolute top-0 inset-x-0 h-6 bg-transparent z-10">
                 <div className="flex justify-between items-center px-6 py-1 text-white">

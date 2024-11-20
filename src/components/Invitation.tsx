@@ -12,7 +12,7 @@ interface TextProps{
 const Invitation: React.FC<{isEdit?: boolean, phoneScreen?: boolean}> = ({isEdit = false, phoneScreen = false}) => { 
     const [text, setText] = useState<TextProps>({
         text1: "Tới dự hôn lễ của hai vợ chồng vào hồi",
-        text2: "9:00",
+        text2: "10:00",
         text3: "06 . 09 . 2069",
         text4: "Thứ Sáu",
         text5: "Số 4 Tôn Thất Thuyết, Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
